@@ -1,0 +1,33 @@
+body {
+  margin : 20px;
+  background-color: #333;
+}
+
+.container {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid white;
+  background-color: white;
+}
+
+.main-img img, .imgs img {
+  width : 100%;
+}
+
+.imgs {
+  display : grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 10px;
+}
+
+.fade-in {
+  opacity : 0;
+  animation : fadeIn 0.5s forwards ease-in;
+}
+
+@keyframes fadeIn{
+  to {
+    opacity : 1;
+  }
+}
